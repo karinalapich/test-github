@@ -7,13 +7,13 @@ else:
     used = (10000 - prev) + curr
 
 if used <= 300:
-    payment = 21.5
+    payment = 21.0
 elif used <= 600:
-    payment = 21.5 + (used - 300) * 0.065
+    payment = 21.0 + (used - 300) * 0.060
 elif used <= 800:
-    payment = 21.5 + 300 * 0.065 + (used - 600) * 0.045
+    payment = 21.0 + 300 * 0.060 + (used - 600) * 0.040
 else:
-    payment = 21.5 + 300 * 0.065 + 200 * 0.045 + (used - 800) * 0.025
+    payment = 21.0 + 300 * 0.060 + 200 * 0.040 + (used - 800) * 0.025
 
 
 avg_price = payment / used
